@@ -1,6 +1,6 @@
 h1. Blog
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+rails 3.1 blog app using html5 haml rspec.
 
 h2. More Information
 
