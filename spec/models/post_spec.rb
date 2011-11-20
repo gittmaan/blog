@@ -15,6 +15,18 @@ describe Post do
   end
 
   describe 'validations' do
+    before(:each) do
+      @post = Factory(:post)
+    end
 
+    it 'rejects post with no title ' do
+      @post.title = ''
+      @post.should_not be_valid
+    end
+
+    it 'rejects post woth no content ' do
+      @post.content = ''
+      @post.should_not be_valid
+    end
   end
 end
