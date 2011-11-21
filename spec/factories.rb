@@ -40,4 +40,18 @@ Factory.define :draft do |draft|
   draft.updated_at  Time.now
 end
 
+Factory.define :spam do |spam|
+  spam.name         'spam Title'
+  spam.email        'example-spam@example.com'
+  spam.website      'spam.com'
+  spam.content      'Some content to put spam'
+  spam.comment_type 'spam_comment'
+  spam.permalink    'perma_link'
+  spam.user_ip      '127.0.0.1'
+  spam.user_agent   'some_agent'
+  spam.referrer     'google.com'
+  spam.association  :post
+  spam.created_at   Time.now
+  spam.updated_at   Time.now
+end
 
