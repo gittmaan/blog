@@ -30,3 +30,14 @@ Factory.define :comment do |comment|
   comment.user_agent    'some_agent'
   comment.referrer      'google.com'
 end
+
+Factory.define :draft do |draft|
+  draft.title       'Draft Title'
+  draft.content     'Some content to put here for draft'
+  draft.author      'test user draft'
+  draft.markdown    'Some markdown draft'
+  draft.created_at  Time.now
+  draft.updated_at  Time.now
+end
+
+
