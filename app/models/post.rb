@@ -14,6 +14,8 @@ class Post
 
   attr_accessible :title, :content, :markdown, :author, :commentable
 
+  has_many :comments, :dependent => :destroy
+
   def to_param
     #1st: Removes all non alphanumeric characters from the string.
 		#2nd: No more than one of the separator in a row.

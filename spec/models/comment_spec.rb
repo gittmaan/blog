@@ -15,6 +15,12 @@ describe Comment do
     end
   end
 
+  describe 'associations' do
+    it 'belongs to post' do
+      Comment.should belong_to :post
+    end
+  end
+
   describe 'validations' do
     before(:each) do
       @comment = Factory(:comment)

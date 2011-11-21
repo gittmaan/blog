@@ -14,6 +14,12 @@ describe Post do
     end
   end
 
+  describe 'associations' do
+    it 'have many comments' do
+      Post.should have_many :comments
+    end
+  end
+
   describe 'validations' do
     before(:each) do
       @post = Factory(:post)
