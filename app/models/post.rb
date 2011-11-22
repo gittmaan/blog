@@ -21,6 +21,6 @@ class Post
     #1st: Removes all non alphanumeric characters from the string.
 		#2nd: No more than one of the separator in a row.
 		#3rd: Remove leading/trailing separator.
-    "#{id.to_s[-5..-1]}-#{title.downcase.gsub(/[^a-zA-Z0-9]+/, '-').gsub(/-{2,}/, '-').gsub(/^-|-$/, '')}"
+    "#{id}-#{title.downcase.gsub(/[^a-zA-Z0-9]+/, '-').gsub(/-{2,}/, '-').gsub(/^-|-$/, '')}"
   end
 end
