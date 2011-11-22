@@ -1,11 +1,6 @@
 Blog::Application.routes.draw do
-  get "post/index"
 
-  get "post/new"
-
-  get "post/show"
-
-  get "post/edit"
+  resources :posts
 
   #get \"users\/show\"
 

@@ -1,4 +1,4 @@
-class PostController < ApplicationController
+class PostsController < ApplicationController
   before_filter :post_id, :only => [:show, :edit]
 
   respond_to :html, :json, :xml, :js
@@ -19,6 +19,16 @@ class PostController < ApplicationController
 
   def edit
     @post = Post.find(@post_id)
+  end
+
+  def create
+    @post = Post.new(params[:post])
+
+    if @post.save
+      redirect_to(@post, :notice => 'Post was successfully created.')
+    else
+      render :action => :new
+    end
   end
 
   private
