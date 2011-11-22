@@ -1,4 +1,12 @@
 Blog::Application.routes.draw do
+  get "post/index"
+
+  get "post/new"
+
+  get "post/show"
+
+  get "post/edit"
+
   #get \"users\/show\"
 
   root :to => "home#index"
