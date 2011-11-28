@@ -38,7 +38,7 @@ describe PostsController do
     describe 'with valid params' do
       it 'succeeds' do
         lambda do
-          post :create, :post => Factory.build(:post).to_json
+          post :create, :post => Factory.build(:post).as_json
         end.should change(Post, :count).by(1)
       end
     end
