@@ -12,6 +12,7 @@ if HOST_OS =~ /linux/i
   gem 'therubyracer', '>= 0.9.8'
 end
 gem 'haml', '>= 3.1.2'
+gem 'formtastic'
 
 gem 'bson_ext', '>= 1.3.1'
 gem 'mongoid', '>= 2.3.3'
