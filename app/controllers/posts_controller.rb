@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_filter :post_id, :only => [:show, :edit]
+  before_filter :authenticate_user!, :except => [:index, :show]
 
   respond_to :html, :json, :xml, :js
 
