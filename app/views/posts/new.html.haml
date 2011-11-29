@@ -1,2 +1,18 @@
-%h1 Post#new
-%p Find me in app/views/post/new.html.haml
+.content
+  .post
+    %h2 
+      New Post
+
+.sidebar
+  = semantic_form_for @post do |f|
+    %p
+      %h3 Title
+      = f.text_field :title
+    %p
+      %h3 Content
+      = f.text_field :content
+    %p
+      %h3 Author
+      = f.text_field :author
+    %p
+      = f.submit 'Create'
