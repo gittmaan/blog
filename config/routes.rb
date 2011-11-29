@@ -4,7 +4,7 @@ Blog::Application.routes.draw do
 
   #get \"users\/show\"
 
-  root :to => "home#index"
+  root :to => 'posts#index'
 
   devise_for :users
   resources :users, :only => :show
