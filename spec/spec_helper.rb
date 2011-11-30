@@ -41,4 +41,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  def test_user
+    @test_user ||= User.find(1) rescue Factory(:user, :id => 1)
+  end
 end

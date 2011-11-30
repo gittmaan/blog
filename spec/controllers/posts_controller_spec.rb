@@ -12,6 +12,7 @@ describe PostsController do
 
   describe "GET 'new'" do
     it 'returns http success' do
+      sign_in(test_user)
       get :new
       response.should be_success
       assigns( :post ).should_not be_nil
@@ -27,6 +28,7 @@ describe PostsController do
 
   describe "GET 'edit'" do
     it 'returns http success' do
+      sign_in(test_user)
       @post = Factory( :post )
       get :edit, :id => @post.to_param
       response.should be_success
@@ -36,6 +38,7 @@ describe PostsController do
 
   describe '#create' do
     it 'succeeds' do
+      sign_in(test_user)
       lambda do
         post :create, :post => Factory.build( :post ).as_json
       end.should change( Post, :count ).by( 1 )
