@@ -1,0 +1,1 @@
+Rails.extend Settings

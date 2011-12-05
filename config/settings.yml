@@ -1,0 +1,7 @@
+test:
+  :foo: 123456
+development:
+  :copyright: 'Content copyright ©'
+  :company:
+    :name: 'tryambake.com'
+
