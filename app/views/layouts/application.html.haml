@@ -9,13 +9,16 @@
     = javascript_include_tag :application
     = csrf_meta_tags
   %body{:class => params[:controller]}
-    #container.container
-      %header
+    #container.container_12
+      #header.grid_12
         %nav
           %ul.hmenu
             = render 'shared/navigation'
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_\#{name}" if msg.is_a?(String)
-      #main{:role => "main"}
+      #content.grid_12{:role => "main"}
         = yield
-      %footer
+      #footer.grid_12
+        %p
+          Content copyright ©
+          = Time.now.year
