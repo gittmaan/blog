@@ -1,5 +1,4 @@
 test:
-  :foo: 123456
 development:
   :copyright: 'Content copyright ©'
   :title: "tryamblog - Girish Tryambake's thoughts on science, arts, technology, politics and culture."
