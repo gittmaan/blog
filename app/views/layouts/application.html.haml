@@ -20,5 +20,6 @@
         = yield
       #footer.grid_12
         %p
-          Content copyright ©
+          = Rails.setting(:copyright)
           = Time.now.year
+          = Rails.setting(:company)[:name]
