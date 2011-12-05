@@ -11,6 +11,9 @@ gem 'jquery-rails'
 if HOST_OS =~ /linux/i
   gem 'therubyracer', '>= 0.9.8'
 end
+
+gem 'settings', "0.0.4"
+
 gem 'haml', '>= 3.1.2'
 gem 'formtastic'
 
