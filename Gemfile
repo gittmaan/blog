@@ -27,6 +27,7 @@ gem 'guard-rails', '>= 0.0.3'
 gem 'guard-livereload', '>= 0.3.0'
 gem 'guard-rspec', '>= 0.4.3'
 gem 'guard-cucumber', '>= 0.6.1'
+gem 'less-rails-bootstrap'
 
 group :development do
   gem 'rspec-rails', '>= 2.6.0'
